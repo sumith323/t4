@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<group ID>com.example</groupId>
+<artifactId>MyMavenApp</artifactId>
+<version>1.0-SNAPSHOT</version>
+<dependencies>
+<dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<version>4.13.2</version>
+<scope>test</scope>
+</dependency>
+</dependencies>
+<build>
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.8.1</version>
+<configuration>
+<source>11</source>
+<target>11</target>
+</configuration>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<version>2.22.2</version>
+</plugin>
+</plugins>
+</build>
+</project>
+
+mvn -version - Check if Maven is installed.
+➢ mvn archetype:generate -DgroupId=com.example -DartifactId=MyMavenApp 
+-DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -Create a Maven project.
+➢ cd MyMavenApp - Navigate into the project directory.
+➢ nano pom.xml - Open and edit pom.xml.
+➢ mvn compile - Compile the Java project.
+➢ mvn test - Run test cases.
+➢ mvn package - Create a JAR file in target/.
+➢ ls target/ - List files in target/ directory.
+➢ mvn clean - Remove compiled files and dependencies.
+➢ java -cp target/MyMavenApp-1.0-SNAPSHOT.jar com.example.App - Run the application.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
