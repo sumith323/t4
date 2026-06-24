@@ -43,8 +43,9 @@ mvn -version - Check if Maven is installed.
 ➢ mvn test - Run test cases.
 ➢ mvn package - Create a JAR file in target/.
 ➢ ls target/ - List files in target/ directory.
-➢ mvn clean - Remove compiled files and dependencies.
 ➢ java -cp target/MyMavenApp-1.0-SNAPSHOT.jar com.example.App - Run the application.
+➢ mvn clean - Remove compiled files and dependencies.
+nano App.java
 
 
 
